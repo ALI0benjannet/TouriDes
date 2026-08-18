@@ -20,8 +20,8 @@ function Badge({ count, tone }: { count: number; tone: "accent" | "primary" }) {
   return (
     <span
       className={cn(
-        "absolute -top-1.5 start-full -translate-x-1 rounded-full px-1.5 text-[10px] font-bold text-white",
-        tone === "accent" ? "bg-accent" : "bg-primary",
+        "absolute -top-1.5 start-full-translate-x-1 rounded-full px-1.5 text-[10px] font-bold text-white",
+        tone === "accent" ? "bg-blue-600" : "bg-primary",
       )}
     >
       {count}
@@ -43,13 +43,13 @@ function IconTab({
   return (
     <Link
       href={href}
-      className="flex flex-col items-center gap-0.5 text-foreground transition-colors hover:text-accent"
+      className="flex flex-col items-center gap-0.5 text-foreground/70 transition-colors hover:text-blue-600"
     >
       <span className="relative leading-none">
         {icon}
         {badge}
       </span>
-      <span className="text-xs font-semibold">{label}</span>
+      <span className="text-xs font-medium">{label}</span>
     </Link>
   );
 }
@@ -72,12 +72,12 @@ export function Navbar() {
     cn(
       "shrink-0 border-b-[3px] px-3.5 pb-3 pt-2.5 text-sm font-semibold transition-colors",
       active
-        ? "border-accent text-accent"
+        ? "border-blue-600 text-blue-600"
         : "border-transparent text-foreground/75 hover:text-foreground",
     );
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-border bg-white shadow-sm">
       {/* Rangée 1 : logo + favoris/réservations/langues/profil */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 pb-1 pt-3 sm:px-8">
         <Link href={paths.home} className="flex items-center gap-2.5">
@@ -101,24 +101,24 @@ export function Navbar() {
 
           {/* Sélecteur de langue en pilules (design) */}
           <div className="flex flex-col items-center gap-0.5">
-            <div className="flex overflow-hidden rounded-full border border-input">
+            <div className="inline-flex overflow-hidden rounded-lg border border-gray-200 bg-white">
               {SUPPORTED_LANGUAGES.map((lang) => (
                 <button
                   key={lang}
                   type="button"
                   onClick={() => i18n.changeLanguage(lang)}
                   className={cn(
-                    "px-3 py-1.5 text-[12px] font-semibold uppercase transition-colors",
+                    "px-3.5 py-1.5 text-xs font-semibold uppercase transition-all",
                     currentLang === lang
-                      ? "bg-ink text-background"
-                      : "bg-card text-muted-foreground hover:text-foreground",
+                      ? "bg-blue-600 text-white shadow-md"
+                      : "text-foreground/70 hover:bg-gray-50 hover:text-foreground",
                   )}
                 >
                   {lang}
                 </button>
               ))}
             </div>
-            <span className="text-[11px] font-semibold text-foreground/55">
+            <span className="text-[11px] font-semibold text-foreground/50">
               {currentLang.toUpperCase()} / DT
             </span>
           </div>
@@ -129,12 +129,10 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => router.push(paths.login)}
-              className="flex flex-col items-center gap-0.5 text-foreground transition-colors hover:text-accent"
+              className="flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-md"
             >
-              <span className="flex size-[26px] items-center justify-center rounded-full bg-gradient-to-br from-gold to-accent text-white">
-                <LogIn className="size-3.5" />
-              </span>
-              <span className="text-xs font-semibold">{t("nav.login")}</span>
+              <LogIn className="size-4" />
+              <span className="hidden sm:inline">{t("nav.login")}</span>
             </button>
           )}
         </div>

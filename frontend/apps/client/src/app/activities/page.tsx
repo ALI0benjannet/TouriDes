@@ -83,7 +83,7 @@ export default async function ActivitiesPage({ searchParams }: { searchParams: S
             <div className="mb-5 text-muted-foreground">{fr.catalog.emptySub}</div>
             <Link
               href="/activities"
-              className="inline-block rounded-full bg-ink px-6 py-2.5 font-semibold text-background hover:bg-accent"
+              className="inline-block rounded-full bg-ink px-6 py-2.5 font-semibold text-background hover:bg-blue-600"
             >
               {fr.catalog.reset}
             </Link>

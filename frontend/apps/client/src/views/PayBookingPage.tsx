@@ -71,7 +71,7 @@ function SuccessView({ bookingId }: { bookingId: number }) {
 
       <Link
         href={paths.bookings}
-        className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-semibold text-background transition-colors hover:bg-accent"
+        className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-semibold text-background transition-colors hover:bg-blue-600"
       >
         <CalendarCheck className="size-4" />
         {t("detail.seeBookings")}
@@ -115,7 +115,7 @@ function StripeForm({ bookingId, amount }: { bookingId: number; amount: number }
         type="button"
         onClick={pay}
         disabled={submitting || !stripe}
-        className="w-full rounded-full bg-accent py-3.5 font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-50"
+        className="w-full rounded-full bg-blue-600 py-3.5 font-semibold text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
       >
         {submitting
           ? t("states.loading")
@@ -182,7 +182,7 @@ export default function PayBookingPage() {
     return (
       <main className="mx-auto max-w-md px-4 py-24 text-center">
         <h1 className="font-display mb-3 text-2xl">{t("errors.http.404")}</h1>
-        <Link href={paths.bookings} className="font-semibold text-primary hover:text-accent">
+          <Link href={paths.bookings} className="font-semibold text-primary hover:text-blue-600">
           ← {t("nav.bookings")}
         </Link>
       </main>
@@ -198,7 +198,7 @@ export default function PayBookingPage() {
           <h1 className="font-display mb-3 text-3xl">
             {t("payment.cancelledTitle", "Réservation annulée")}
           </h1>
-          <Link href={paths.activities} className="font-semibold text-primary hover:text-accent">
+          <Link href={paths.activities} className="font-semibold text-primary hover:text-blue-600">
             {t("favorites.cta")}
           </Link>
         </div>
@@ -260,7 +260,7 @@ export default function PayBookingPage() {
                 type="button"
                 onClick={simulate}
                 disabled={simulating}
-                className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-50"
+                className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3.5 font-semibold text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
               >
                 <CreditCard className="size-4" />
                 {simulating

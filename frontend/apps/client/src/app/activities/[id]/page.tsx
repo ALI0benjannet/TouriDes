@@ -96,7 +96,7 @@ export default async function ActivityDetailPage({ params }: { params: Params })
 
       <Link
         href="/activities"
-        className="mb-5 inline-block text-sm font-semibold text-primary hover:text-accent"
+        className="mb-5 inline-block text-sm font-semibold text-primary hover:text-blue-600"
       >
         ← {fr.detail.back}
       </Link>

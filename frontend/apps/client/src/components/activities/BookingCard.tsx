@@ -131,7 +131,7 @@ export function BookingCard({ activityId, prix }: { activityId: number; prix: nu
             setGuests((g) => Math.max(1, g - 1));
             setBooked(false);
           }}
-          className="flex size-8 items-center justify-center rounded-full border border-input bg-white hover:border-accent hover:text-accent dark:bg-muted"
+          className="flex size-8 items-center justify-center rounded-full border border-input bg-white hover:border-blue-600 hover:text-blue-600 dark:bg-muted"
         >
           <Minus className="size-4" />
         </button>
@@ -143,7 +143,7 @@ export function BookingCard({ activityId, prix }: { activityId: number; prix: nu
             setGuests((g) => Math.min(8, selectedSlot?.places_disponibles ?? 8, g + 1));
             setBooked(false);
           }}
-          className="flex size-8 items-center justify-center rounded-full border border-input bg-white hover:border-accent hover:text-accent dark:bg-muted"
+          className="flex size-8 items-center justify-center rounded-full border border-input bg-white hover:border-blue-600 hover:text-blue-600 dark:bg-muted"
         >
           <Plus className="size-4" />
         </button>
@@ -167,7 +167,7 @@ export function BookingCard({ activityId, prix }: { activityId: number; prix: nu
           type="button"
           onClick={applyPromo}
           disabled={promoChecking || !promoInput.trim()}
-          className="rounded-xl border border-input px-4 text-[13px] font-semibold hover:border-accent hover:text-accent disabled:opacity-50"
+          className="rounded-xl border border-input px-4 text-[13px] font-semibold hover:border-blue-600 hover:text-blue-600 disabled:opacity-50"
         >
           {t("detail.promoApply", "Appliquer")}
         </button>
@@ -207,7 +207,7 @@ export function BookingCard({ activityId, prix }: { activityId: number; prix: nu
           </div>
           <Link
             href={`/bookings/${bookedId}/pay`}
-            className="mb-2 block w-full rounded-full bg-accent py-3.5 text-center text-[15px] font-semibold text-white transition-colors hover:bg-accent-hover"
+            className="mb-2 block w-full rounded-full bg-blue-600 py-3.5 text-center text-[15px] font-semibold text-white transition-colors hover:bg-blue-700"
           >
             {t("payment.payNow", "Payer maintenant")}
           </Link>
@@ -223,7 +223,7 @@ export function BookingCard({ activityId, prix }: { activityId: number; prix: nu
           type="button"
           onClick={confirm}
           disabled={createBooking.isPending || openSlots.length === 0}
-          className="w-full rounded-full bg-accent py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-50"
+          className="w-full rounded-full bg-blue-600 py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
         >
           {createBooking.isPending
             ? t("states.loading")

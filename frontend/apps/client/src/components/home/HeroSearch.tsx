@@ -32,7 +32,7 @@ export function HeroSearch() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder={t("home.searchPh")}
-        className="min-w-0 flex-[2] bg-transparent px-5 py-3.5 text-base text-foreground placeholder:text-foreground/40"
+        className="min-w-0 flex-[2]bg-transparent px-5 py-3.5 text-base text-foreground placeholder:text-foreground/40"
       />
       <div className="my-2 hidden w-px bg-border sm:block" />
       <input
@@ -57,7 +57,7 @@ export function HeroSearch() {
       </select>
       <button
         type="submit"
-        className="rounded-full bg-accent px-6 text-base font-semibold text-white transition-colors hover:bg-accent-hover sm:px-8"
+        className="rounded-full bg-blue-700 px-6 text-base font-semibold text-white transition-colors hover:bg-blue-600 sm:px-8"
       >
         {t("actions.search")}
       </button>

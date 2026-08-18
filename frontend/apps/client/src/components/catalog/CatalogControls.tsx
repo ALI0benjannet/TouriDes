@@ -51,8 +51,8 @@ export function CatalogControls({ categories }: { categories: Category[] }) {
     cn(
       "rounded-full border px-4 py-2 text-sm font-semibold transition-colors",
       active
-        ? "border-accent bg-accent text-white"
-        : "border-input bg-card text-foreground/75 hover:border-accent hover:text-accent",
+        ? "border-blue-600 bg-blue-600 text-white"
+        : "border-input bg-card text-foreground/75 hover:border-blue-600 hover:text-blue-600",
     );
 
   return (

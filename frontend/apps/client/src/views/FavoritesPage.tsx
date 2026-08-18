@@ -21,12 +21,12 @@ export default function FavoritesPage() {
 
   const empty = (title: string, subtitle: string, cta: string, to: string) => (
     <div className="rounded-2xl border border-dashed border-input bg-card px-5 py-20 text-center">
-      <Heart className="mx-auto mb-3 size-10 text-accent/35" />
+      <Heart className="mx-auto mb-3 size-10 text-blue-600/35" />
       <div className="font-display mb-2 text-2xl">{title}</div>
       <div className="mb-6 text-muted-foreground">{subtitle}</div>
       <Link
         href={to}
-        className="rounded-full bg-accent px-6 py-3 font-semibold text-white transition-colors hover:bg-accent-hover"
+        className="rounded-full bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
       >
         {cta}
       </Link>

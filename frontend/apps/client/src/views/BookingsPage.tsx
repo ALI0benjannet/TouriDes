@@ -42,7 +42,7 @@ export default function BookingsPage() {
           <div className="mb-6 text-muted-foreground">{t("bookingsPage.loginSub")}</div>
           <Link
             href={paths.login}
-            className="rounded-full bg-accent px-6 py-3 font-semibold text-white hover:bg-accent-hover"
+            className="rounded-full bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
           >
             {t("nav.login")}
           </Link>
@@ -59,7 +59,7 @@ export default function BookingsPage() {
           <div className="mb-6 text-muted-foreground">{t("bookingsPage.emptySub")}</div>
           <Link
             href={paths.activities}
-            className="rounded-full bg-accent px-6 py-3 font-semibold text-white hover:bg-accent-hover"
+            className="rounded-full bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
           >
             {t("favorites.cta")}
           </Link>
@@ -77,7 +77,7 @@ export default function BookingsPage() {
               <div className="min-w-0 flex-1">
                 <Link
                   href={`/activities/${booking.activity_id}`}
-                  className="font-display text-lg hover:text-accent"
+                  className="font-display text-lg hover:text-blue-600"
                 >
                   {booking.activity ?? `#${booking.activity_id}`}
                 </Link>
@@ -99,7 +99,7 @@ export default function BookingsPage() {
                 {booking.statut === "pending" && (
                   <Link
                     href={`/bookings/${booking.id}/pay`}
-                    className="rounded-full bg-accent px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-accent-hover"
+                    className="rounded-full bg-blue-600 px-4 py-1.5 text-xs font-bold text-white transition-colors hover:bg-blue-700"
                   >
                     {t("payment.payNow", "Payer maintenant")}
                   </Link>
