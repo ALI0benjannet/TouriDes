@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --radius: 0.75rem;
+
+  /* Palette TouriBook (design 08/2026) — sable, sarcelle profonde, terracotta, or */
+  --background: #f6f0e4;            /* sable clair */
+  --foreground: #1c3641;            /* sarcelle profonde */
+  --primary: #0f7c8c;               /* sarcelle */
+  --primary-foreground: #fffdf7;
+  --secondary: #efe3c9;             /* sable soutenu */
+  --secondary-foreground: #1c3641;
+  --accent: #c75b33;                /* terracotta */
+  --accent-foreground: #ffffff;
+  --accent-hover: #a94a26;
+  --gold: #e4a93e;                  /* or / couchant */
+  --muted: #f1ebdd;
+  --muted-foreground: rgba(28, 54, 65, 0.6);
+  --destructive: #b3261e;
+  --border: rgba(28, 54, 65, 0.12);
+  --input: rgba(28, 54, 65, 0.18);
+  --ring: #0f7c8c;
+  --card: #fffdf7;                  /* ivoire */
+  --card-foreground: var(--foreground);
+  --ink: #1c3641;                   /* footer / aplats sombres */
+  --ink-foreground: rgba(246, 240, 228, 0.85);
+}
+
+.dark {
+  --background: #142830;
+  --foreground: #f2ede1;
+  --card: #1c3641;
+  --card-foreground: #f2ede1;
+  --secondary: #1f3d49;
+  --secondary-foreground: #f2ede1;
+  --muted: #1a333d;
+  --muted-foreground: rgba(242, 237, 225, 0.65);
+  --border: rgba(242, 237, 225, 0.14);
+  --input: rgba(242, 237, 225, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-hover: var(--accent-hover);
+  --color-gold: var(--gold);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --font-sans: "Albert Sans", "Noto Sans Arabic", system-ui, sans-serif;
+  --font-display: "Marcellus", "Albert Sans", serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  /* Ajustements RTL */
+  [dir="rtl"] {
+    font-family: "Noto Sans Arabic", "Albert Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .animate-fade-up {
+    animation: fade-up 0.6s ease both;
+  }
+}

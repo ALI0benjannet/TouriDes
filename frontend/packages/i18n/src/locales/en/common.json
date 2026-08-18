@@ -1,0 +1,309 @@
+{
+  "app": {
+    "name": "TouriBook",
+    "tagline": "Book your activities in one click"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "subtitle": "Discover and book the best tourist activities.",
+    "explore": "Explore activities",
+    "profile": "Profile",
+    "heroKicker": "Summer 2026 · Tunisia",
+    "heroTitle": "The Mediterranean is waiting.",
+    "heroTitleUser": "The Mediterranean is waiting, {{name}}.",
+    "heroSub": "Turquoise coves, thousand-year-old medinas, endless dunes — discover and book the country's best experiences.",
+    "searchPh": "Where to? Try “Djerba”…",
+    "guests": "{{count}} guest",
+    "guests_other": "{{count}} guests",
+    "destTitle": "Where next?",
+    "destSub": "Four regions, four moods.",
+    "destTags": {
+      "tunis": "History & medina",
+      "djerba": "Gentle island",
+      "tozeur": "Dunes & oases",
+      "tabarka": "Coral & mountains"
+    },
+    "popTitle": "Popular activities",
+    "popSub": "The finest experiences this season.",
+    "seeAll": "See all",
+    "values": {
+      "cancel": {
+        "title": "Free cancellation",
+        "body": "Change your mind up to 48 h before departure, at no cost."
+      },
+      "guides": {
+        "title": "Local guides",
+        "body": "Every experience is led by someone who actually lives there."
+      },
+      "payment": {
+        "title": "Secure payment",
+        "body": "Pay online or on site — your data stays protected."
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "activities": "Activities",
+    "favorites": "My favorites",
+    "bookings": "My bookings",
+    "account": "My account",
+    "profile": "Profile",
+    "settings": "Settings",
+    "login": "Log in",
+    "register": "Sign up",
+    "logout": "Log out",
+    "menu": "Menu"
+  },
+  "activities": {
+    "description": "Browse the best activities to book near you."
+  },
+  "favorites": {
+    "description": "Open your favorite activities again quickly.",
+    "subtitle": "The experiences you loved, in one place.",
+    "emptyTitle": "No favorites yet",
+    "emptySub": "Tap the heart on any activity to keep it here.",
+    "cta": "Browse activities",
+    "loginTitle": "Log in for your favorites",
+    "loginSub": "Favorites are saved to your account."
+  },
+  "bookings": {
+    "description": "View your current bookings and upcoming trips."
+  },
+  "actions": {
+    "search": "Search",
+    "save": "Save",
+    "cancel": "Cancel",
+    "retry": "Retry",
+    "back": "Back"
+  },
+  "states": {
+    "loading": "Loading…",
+    "empty": "No results"
+  },
+  "login": {
+    "title": "Sign in to your account",
+    "subtitle": "Enter your email and password to continue.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Log in",
+    "submitting": "Signing in…",
+    "no_account": "Don’t have an account?",
+    "register": "Create one",
+    "show_password": "Show password",
+    "hide_password": "Hide password"
+  },
+  "errors": {
+    "network": "Cannot reach the server. Check your connection.",
+    "validation": "Please fix the highlighted fields.",
+    "unknown": "An unexpected error occurred.",
+    "sessionExpired": "Your session expired, please log in again.",
+    "http": {
+      "403": "Access denied.",
+      "404": "Resource not found.",
+      "500": "Server error. Try again later."
+    }
+  },
+  "auth": {
+    "errors": {
+      "invalid_credentials": "Incorrect email or password.",
+      "email_not_verified": "Please verify your email before logging in.",
+      "email_already_exists": "An account already exists with this email.",
+      "invalid_token": "Invalid authentication token.",
+      "expired_token": "Your session has expired. Please log in again.",
+      "rate_limited": "Too many attempts. Please wait and try again.",
+      "not_admin": "Administrator access is required.",
+      "account_disabled": "Your account is disabled. Contact support.",
+      "unknown": "An unexpected error occurred while signing in.",
+      "email_not_found": "No account matches this email address."
+    },
+    "password": {
+      "min": "The password must be at least 8 characters long.",
+      "max": "The password must not exceed 128 characters.",
+      "upper": "Add an uppercase letter.",
+      "lower": "Add a lowercase letter.",
+      "digit": "Add a number.",
+      "special": "Add a special character.",
+      "required": "This field is required.",
+      "mismatch": "Passwords do not match.",
+      "same_as_old": "The new password must be different from the current one.",
+      "success": "Password updated."
+    },
+    "email": {
+      "invalid": "Please enter a valid email address."
+    },
+    "name": {
+      "min": "The field must be at least 2 characters long.",
+      "max": "The field must not exceed 100 characters."
+    },
+    "token": {
+      "required": "A token is required."
+    },
+    "forgotPassword": {
+      "title": "Forgot password",
+      "subtitle": "Enter your email to receive a reset link.",
+      "email": "Email address",
+      "submit": "Send link",
+      "submitting": "Sending…",
+      "back_to_login": "Back to login"
+    },
+    "resetPassword": {
+      "title": "Reset your password",
+      "subtitle": "Choose a new secure password.",
+      "new_password": "New password",
+      "confirm_password": "Confirm password",
+      "submit": "Reset password",
+      "submitting": "Resetting…",
+      "success": "Your password has been reset.",
+      "invalid_token": "The code is invalid or expired.",
+      "no_email": "Email address is missing.",
+      "resent": "A new code has been sent.",
+      "resend_error": "The code could not be resent.",
+      "code_step": "Verify your code",
+      "code_label": "Verification code",
+      "verify_code": "Verify code",
+      "resend_code": "Resend code",
+      "validating": "Verifying…",
+      "new_password_step": "Choose your new password"
+    },
+    "checkEmail": {
+      "title": "Check your email",
+      "description": "We sent an email to {email}.",
+      "fallback_email": "your email address",
+      "resend": "Resend email",
+      "resend_wait": "Resend in {seconds}s",
+      "back_to_login": "Back to login",
+      "open_verification": "Open verification page"
+    },
+    "verifyEmail": {
+      "title": "Email verification",
+      "loading": "Verifying your email…",
+      "success": "Your email has been verified successfully.",
+      "invalid": "The verification link is invalid or expired.",
+      "missing": "The verification link is incomplete.",
+      "resend": "Resend email",
+      "resend_wait": "Resend in {seconds}s",
+      "subtitle": "Enter your email and the 4-digit code you received.",
+      "email": "Email address",
+      "code": "Verification code",
+      "code_hint": "4 digits sent by email",
+      "submitting": "Verifying…",
+      "confirm": "Confirm",
+      "resending": "Sending…",
+      "no_email": "An email is required to resend the code.",
+      "resend_success": "A new code has been sent.",
+      "resend_error": "The code could not be resent right now."
+    },
+    "profile": {
+      "title": "Profile",
+      "subtitle": "Manage your personal information and password.",
+      "photo": "Profile photo",
+      "photo_hint": "JPG, PNG, or WebP — up to 2 MB.",
+      "change_photo": "Change photo",
+      "upload": "Upload",
+      "remove": "Remove",
+      "avatar_success": "Profile photo updated.",
+      "avatar_error": "Failed to upload photo.",
+      "avatar_removed": "Photo removed.",
+      "avatar_type_error": "Unsupported format (JPG, PNG or WebP).",
+      "avatar_size_error": "Image must not exceed 2 MB.",
+      "personal_info_hint": "These details appear on your account.",
+      "password_hint": "Use at least 8 characters, with numbers and symbols.",
+      "personal_info": "Personal information",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "save": "Save",
+      "password": "Password",
+      "old_password": "Current password",
+      "new_password": "New password",
+      "confirm_new_password": "Confirm new password",
+      "update_password": "Update",
+      "success": "Profile updated."
+    },
+    "password_strength": {
+      "weak": "Weak password",
+      "fair": "Fair password",
+      "good": "Good password",
+      "strong": "Strong password",
+      "length": "At least 8 characters",
+      "lower": "A lowercase letter",
+      "upper": "An uppercase letter",
+      "digit": "A number",
+      "special": "A special character"
+    }
+  },
+  "register": {
+    "title": "Create an account",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "submit": "Sign up",
+    "submitting": "Sending…",
+    "already_account": "Already have an account?",
+    "login": "Log in"
+  },
+  "language": {
+    "label": "Language",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "catalog": {
+    "results": "{{count}} experience to book",
+    "results_other": "{{count}} experiences to book",
+    "sortPop": "Popular",
+    "sortAsc": "Price: low to high",
+    "sortDesc": "Price: high to low",
+    "viewGrid": "Grid",
+    "viewMap": "Map",
+    "mapHint": "Stylized map — tap a price to open the activity",
+    "allCategories": "All",
+    "categories": {
+      "Culture": "Culture",
+      "Mer": "Sea",
+      "Désert": "Desert",
+      "Aventure": "Adventure",
+      "Gastronomie": "Food"
+    },
+    "emptyTitle": "No activities match",
+    "emptySub": "Try another keyword or clear the filters.",
+    "reset": "Reset filters",
+    "book": "Book",
+    "perPerson": "/ person",
+    "favorite": "Favorite"
+  },
+  "detail": {
+    "back": "Back to activities",
+    "dateL": "Date",
+    "guestsL": "Guests",
+    "total": "Total",
+    "confirm": "Confirm booking",
+    "loginToBook": "Log in to book",
+    "bookedMsg": "Booking confirmed!",
+    "seeBookings": "View my bookings",
+    "freeCancel": "Free cancellation up to 48 h before departure",
+    "noAvailability": "No slots available at the moment.",
+    "noSeats": "No seats left on this slot.",
+    "seatsLeft": "{{count}} seat left",
+    "seatsLeft_other": "{{count}} seats left"
+  },
+  "bookingsPage": {
+    "subtitle": "Your next adventures, all in one place.",
+    "emptyTitle": "No bookings",
+    "emptySub": "Book an activity to find it here.",
+    "loginTitle": "Log in for your bookings",
+    "loginSub": "Bookings are linked to your account.",
+    "guests": "{{count}} guests",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "footer": {
+    "discover": "Discover",
+    "help": "Help",
+    "admin": "Admin area"
+  }
+}
